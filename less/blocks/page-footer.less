@@ -1,0 +1,78 @@
+.page-footer {
+  border-top: 1px solid rgba(155, 155, 155, 0.15);
+  margin-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.page-footer__container {
+  .container();
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__navigation ul {
+  font-size: @fontsize-small;
+  padding: 0;
+}
+
+.page-footer__repair-list {
+  margin-bottom: 30px;
+}
+
+.page-footer__nav-title {
+  font-family: @fontfamily-ptsans;
+  line-height: 17px;
+}
+
+.page-footer__item {
+  margin-bottom: 7px;
+}
+
+.page-footer__item-link {
+  letter-spacing: 0.05em;
+  line-height: 17px;
+  color: @color-grey;
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+    border-bottom: 1px solid @color-services-blue;
+  }
+}
+
+.page-footer__phone-number {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: @fontsize-small;
+  font-weight: bold;
+}
+
+.page-footer__mail {
+  font-size: @fontsize-small;
+  color: @color-grey;
+  text-decoration: none;
+  border-bottom: 1px solid @color-services-blue;
+
+  &:hover {
+    color: #000000;
+    border-bottom: 0px solid @color-services-blue;
+  }
+}
+
+.page-footer__author p {
+  font-family: @fontfamily-ptsans;
+  margin-top: 0;
+  font-size: @fontsize-small;
+}
+
+.page-footer__author-link {
+  margin-left: 5px;
+  color: @color-grey;
+  text-decoration: none;
+
+  &:hover {
+    color: @color-services-blue;
+  }
+}

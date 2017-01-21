@@ -1,0 +1,29 @@
+.main-nav__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.main-nav__item {
+  margin: 0px 75px;
+  padding: 10px;
+}
+
+.main-nav__link {
+  font-family: @fontfamily-ptsans;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 2px solid rgba(255,255,255,0);
+
+  &:hover {
+    color: #5d5d5d;
+  }
+
+  &:hover .arrow-down-icon {
+    fill: @color-services-blue;
+  }
+}

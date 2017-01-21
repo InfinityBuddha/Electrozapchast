@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  padding: 0.85em 3em;
+  line-height: 1.25rem;
+  font-family: @fontfamily-ptsans;
+  font-size: @fontsize-base;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: @color-btn-primary;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  &--secondary {
+    background-color: @bolor-btn-secondary;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--medium {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: darken(@color-btn-primary, 5%);
+  }
+}
+
+.btn--secondary:hover {
+  background-color: darken(@bolor-btn-secondary, 5%);
+}
+
+.btn__form {
+  margin-right: 20px;
+}

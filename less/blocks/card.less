@@ -1,0 +1,42 @@
+.card {
+  height: 100%;
+  padding: 50px 40px;
+  background-color: @color-services-blue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+
+  &--green {
+    background-color: @color-services-green;
+
+  }
+
+  &:hover {
+    position: relative;
+    top: -1px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2),
+                0 5px 5px 0 rgba(0,0,0,.24);
+    background-color: darken(@color-services-blue, 5%);
+  }
+}
+
+.card--green:hover {
+  background-color: darken(@color-services-green, 5%);
+}
+
+.card__spacer {
+  margin-bottom: 20px;
+}
+
+.card__title {
+  font-family: @fontfamily-ptsans;
+  margin: 0;
+  font-size: @fontsize-h3;
+  line-height: @lineheight-h3;
+}
+
+.card__subtitle {
+  font-size: @fontsize-big;
+  line-height: @lineheight-base * 1.5;
+}

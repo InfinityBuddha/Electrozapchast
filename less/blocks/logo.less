@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo__link {
+  font-size: @fontsize-big;
+  line-height: 27px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+
+  &--small {
+    line-height: @lineheight-base;
+    font-size: @fontsize-base;
+  }
+
+  & span {
+    color: @color-services-blue;
+  }
+
+  &:hover span {
+    color: #000000;
+  }
+
+  &:hover {
+    color: @color-btn-primary;
+  }
+
+}
+
+.logo__page-footer {
+  margin-top: 0px;
+}
+
+.logo__phone-number {
+  margin-top: 10px;
+  font-size: @fontsize-base;
+  line-height: @lineheight-base;
+}
