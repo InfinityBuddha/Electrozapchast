@@ -9,49 +9,51 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo">
-        <a class="logo__link" href="index.html"><span>Электро</span>запчасть</a>
-        <div class="logo__phone-number">8 (4842) 700-633</div>
+      <div class="page-header__container">
+        <div class="logo">
+          <a class="logo__link" href="index.html"><span>Электро</span>запчасть</a>
+          <div class="logo__phone-number">8 (4842) 700-633</div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Наши услуги
+                <svg class="arrow-down-icon" width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polygon id="Shape" points="8.21428571 0.0178571429 5 3.23214286 1.78571429 0.0178571429 0.0178571429 1.78571429 5 6.76785714 9.98214286 1.78571429"></polygon>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Наши услуги
-              <svg class="arrow-down-icon" width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <polygon id="Shape" points="8.21428571 0.0178571429 5 3.23214286 1.78571429 0.0178571429 0.0178571429 1.78571429 5 6.76785714 9.98214286 1.78571429"></polygon>
-              </svg>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <article class="promo">
         <div class="promo__text-group">
           <h1 class="promo__title">Электроинструмент</h1>
           <h3 class="promo__subtitle">Ремонт и продажа</h3>
-          <a href="#" class="btn">Связаться с нами</a>
+          <a href="#" class="btn btn__promo">Связаться с нами</a>
         </div>
       </article>
       <section class="services">
         <div class="services__container">
-          <h2 class="services__title">Наши услуги</h2>
+          <h2 class="section-title">Наши услуги</h2>
           <div class="row">
             <div class="column">
               <div class="card card__spacer">
                 <h3 class="card__title">Ремонт</h3>
                 <p class="card__subtitle">Бензоинструмент</p>
               </div>
-              <div class="card">
+              <div class="card card__spacer">
                 <h3 class="card__title">Ремонт</h3>
                 <p class="card__subtitle">Электроинструмент</p>
               </div>
             </div>
             <div class="column">
-              <div class="card">
+              <div class="card card__spacer">
                 <h3 class="card__title">Продажа инструмента</h3>
                 <form class="form">
                   <div class="form__group">
@@ -72,7 +74,7 @@
                   </div>
                   <div class="form__group form__group-btn">
                     <button class="btn btn__form btn--small">Скачать прайс-лист</button>
-                    <button class="btn btn--secondary btn--small">Скачать каталог</button>
+                    <button class="btn btn__form btn--secondary btn--small">Скачать каталог</button>
                   </div>
                 </form>
               </div>
@@ -81,7 +83,7 @@
           <div class="row row__half-row">
             <div class="column">
               <a class="services__link" href="catalog.html">
-                <div class="card card--green">
+                <div class="card card__spacer card--green">
                   <h3 class="card__title">Продажа запчастей</h3>
                   <p class="card__subtitle">Оригинальные</p>
                 </div>
@@ -96,12 +98,33 @@
           </div>
         </div>
       </section>
+      <div class="modal-section">
+        <article class="modal">
+          <svg class="modal__icon-close" width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M27.7297297,0.648648649 L15.8513514,12.527027 C15.3648649,13.0135135 14.5945946,13.0135135 14.1486486,12.527027 L2.27027027,0.648648649 C1.78378378,0.162162162 1.01351351,0.162162162 0.567567568,0.648648649 L0.567567568,0.648648649 C0.0810810811,1.13513514 0.0810810811,1.90540541 0.567567568,2.35135135 L12.4459459,14.2297297 C12.9324324,14.7162162 12.9324324,15.4864865 12.4459459,15.9324324 L0.527027027,27.8513514 C0.0405405405,28.3378378 0.0405405405,29.1081081 0.527027027,29.5540541 L0.527027027,29.5540541 C1.01351351,30.0405405 1.78378378,30.0405405 2.22972973,29.5540541 L14.1081081,17.6756757 C14.5945946,17.1891892 15.3648649,17.1891892 15.8108108,17.6756757 L27.7297297,29.5945946 C28.2162162,30.0810811 28.9864865,30.0810811 29.4324324,29.5945946 L29.4324324,29.5945946 C29.9189189,29.1081081 29.9189189,28.3378378 29.4324324,27.8918919 L17.5945946,15.972973 C17.1081081,15.4864865 17.1081081,14.7162162 17.5945946,14.2702703 L29.472973,2.39189189 C29.9594595,1.90540541 29.9594595,1.13513514 29.472973,0.689189189 L29.472973,0.689189189 C28.9864865,0.202702703 28.2162162,0.202702703 27.7297297,0.648648649 L27.7297297,0.648648649 Z" id="Shape">
+            </path>
+          </svg>
+          <h2 class="modal__title">Отвечаем на ваши вопросы</h2>
+          <form class="form">
+            <div class="form__group form__group-modal">
+              <input class="field field--input" type="text" placeholder="Имя">
+              <input class="field field--input" type="email" placeholder="Email">
+            </div>
+            <div class="form__group">
+              <textarea class="field field--area" type="text" placeholder="Ваше сообщение"></textarea>
+            </div>
+            <div class="form__group form__group-btn">
+              <button class="btn btn--secondary">Отправить</button>
+            </div>
+          </form>
+        </article>
+      </div>
       <section class="contacts">
         <div class="contacts__container">
           <div class="row">
             <div class="column">
               <div class="contacts__text-group">
-                <h2 class="contacts__title">Контакты</h2>
+                <h2 class="section-title contacts__title">Контакты</h2>
                 <table class="contacts__table">
                   <tr>
                     <td class="contacts__item">e-mail:</td>
@@ -122,7 +145,7 @@
                     </td>
                   </tr>
                 </table>
-                <a class="btn btn--medium" href="">Напишите нам</a>
+                <a class="btn btn--medium" id="btn-modal" href="">Напишите нам</a>
               </div>
             </div>
             <div class="column">
@@ -168,6 +191,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
   </body>
 </html>

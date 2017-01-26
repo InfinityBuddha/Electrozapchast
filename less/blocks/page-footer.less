@@ -1,15 +1,21 @@
 .page-footer {
   border-top: 1px solid rgba(155, 155, 155, 0.15);
   margin-top: 90px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .page-footer__container {
   .container();
 
   display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   justify-content: space-between;
+}
+
+.page-footer__navigation {
+  display: none;
 }
 
 .page-footer__navigation ul {
@@ -44,7 +50,7 @@
 
 .page-footer__phone-number {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   font-size: @fontsize-small;
   font-weight: bold;
 }
@@ -61,6 +67,10 @@
   }
 }
 
+.page-footer__author {
+  margin-top: 20px;
+}
+
 .page-footer__author p {
   font-family: @fontfamily-ptsans;
   margin-top: 0;
@@ -74,5 +84,21 @@
 
   &:hover {
     color: @color-services-blue;
+  }
+}
+
+@media @tablet-widths {
+  .page-footer__container {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .page-footer__navigation {
+    display: block;
+  }
+
+  .page-footer__author {
+    margin-top: 0px;
   }
 }

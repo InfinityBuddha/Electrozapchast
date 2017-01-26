@@ -1,23 +1,29 @@
 .main-nav__list {
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
   margin: 0;
   padding: 0;
   margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-nav__item {
+  width: 100%;
   margin: 0px 75px;
-  padding: 10px;
+  margin-top: -1px;
+  text-align: center;
 }
 
 .main-nav__link {
-  font-family: @fontfamily-ptsans;
+  display: block;
+  padding: 10px;
   padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255,255,255,0);
+  font-family: @fontfamily-ptsans;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
-  border-bottom: 2px solid rgba(255,255,255,0);
 
   &:hover {
     color: #5d5d5d;
@@ -25,5 +31,11 @@
 
   &:hover .arrow-down-icon {
     fill: @color-services-blue;
+  }
+}
+
+@media @tablet-widths {
+  .main-nav__list {
+    flex-flow: row nowrap;
   }
 }

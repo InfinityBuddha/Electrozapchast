@@ -36,5 +36,31 @@
 }
 
 .btn__form {
-  margin-right: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.btn__promo {
+  font-size: @fontsize-small;
+  width: 250px;
+}
+
+@media @desktop-widths {
+  .btn__form {
+    margin-bottom: 0;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .btn__promo {
+    width: 290px;
+    font-size: @fontsize-base;
+  }
 }

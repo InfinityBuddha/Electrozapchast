@@ -16,14 +16,29 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: @fontfamily-ptsans;
-  font-size: @fontsize-h1;
-  line-height: @lineheight-h1;
+  font-size: @fontsize-big;
+  line-height: @lineheight-h3;
 }
 
 .promo__subtitle {
   margin-top: 0px;
   font-weight: normal;
-  font-size: @fontsize-h3;
+  font-size: @fontsize-base;
   line-height: @lineheight-h3;
   color: @color-grey;
+}
+
+@media @tablet-widths {
+  .promo__title {
+    font-size: @fontsize-h3;
+  }
+  .promo__subtitle {
+    font-size: @fontsize-big;
+  }
+}
+
+@media @desktop-widths {
+  .promo__title {
+    font-size: @fontsize-h2;
+  }
 }
