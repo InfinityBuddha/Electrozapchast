@@ -1,0 +1,186 @@
+.card {
+  position: relative;
+  height: 100%;
+  padding: 50px 40px;
+  background-color: @color-services-blue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.1s ease-out 0.2s;
+
+  &--green {
+    background-color: @color-services-green;
+
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2),
+                0 5px 5px 0 rgba(0,0,0,.24);
+    background-color: darken(@color-services-blue, 5%);
+  }
+}
+
+.card--green:hover {
+  background-color: darken(@color-services-green, 5%);
+}
+
+.card__spacer {
+  margin-bottom: 20px;
+}
+
+.card__title {
+  font-family: @fontfamily-ptsans;
+  margin: 0;
+  font-size: @fontsize-big;
+  line-height: @lineheight-h3;
+}
+
+.card__subtitle {
+  font-size: @fontsize-base;
+  line-height: @lineheight-base * 1.5;
+  flex-grow: 1;
+}
+
+.card__tools {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+
+.card__tools .card__subtitle {
+  margin-bottom: 25px;
+}
+
+.card__gasoline-icon {
+  position: absolute;
+  right: -10px;
+  bottom: -15px;
+  transform: rotate(-55deg);
+  transition: all 0.1s ease-out 0.2s;
+}
+
+.card__electro-icon {
+  position: absolute;
+  right: -5px;
+  bottom: 10px;
+  transition: all 0.15s ease-out 0.2s;
+}
+
+.card__repair-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+  transform: translateX(150px);
+  transition: all 0.15s ease-out 0.2s;
+}
+
+.card__sell-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+  transform: translateX(150px);
+  transition: all 0.15s ease-out 0.2s;
+}
+
+.card:hover .card__repair-icon {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.card:hover .card__electro-icon {
+  transform: scale(1.1) translateX(-5px);
+}
+
+.card:hover .card__gasoline-icon {
+  transform: scale(1.1) translate(-5px, -5px) rotate(-50deg);
+}
+
+.card:hover .card__sell-icon {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+@media @desktop-widths {
+  .card__tools {
+    height: 490px;
+  }
+
+  .card__title {
+    font-size: @fontsize-h3;
+  }
+
+  .card__subtitle {
+    font-size: @fontsize-big;
+  }
+
+  .card__tools {
+
+    &:before {
+      content:'Makita';
+      position: absolute;
+      font-size: 53px;
+      text-transform: uppercase;
+      top: 245px;
+      left: 44px;
+      color: #fff;
+      opacity: 0.7;
+    }
+
+    &:after {
+      content:'Bosch';
+      position: absolute;
+      font-size: 69px;
+      text-transform: uppercase;
+      font-weight: bold;
+      top: 184px;
+      right: 72px;
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+
+  .card__tools .card__title {
+
+  &:before {
+    content:'Hammer';
+    position: absolute;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 185px;
+    left: 97px;
+    color: #fff;
+    opacity: 0.3;
+  }
+
+  &:after {
+    content:'Metabo';
+    position: absolute;
+    font-size: 30px;
+    text-transform: uppercase;
+    top: 303px;
+    left: 333px;
+    color: #fff;
+    opacity: 0.4;
+  }
+}
+
+.card__tools .card__subtitle {
+  margin-top: 10px;
+
+  &:after {
+    content:'Интерскол';
+    position: absolute;
+    font-size: 35px;
+    text-transform: uppercase;
+    top: 316px;
+    left: 64px;
+    color: #fff;
+    opacity: 0.25;
+  }
+}
+}

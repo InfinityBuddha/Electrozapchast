@@ -1,0 +1,67 @@
+.field {
+  width: 100%;
+  padding: 1em 1.1em;
+  border: none;
+  font-size: @fontsize-small;
+  color: #000;
+  line-height: 1em;
+
+  &--select {
+    display: block;
+    height: 40px;
+    text-transform: uppercase;
+  }
+
+  &--input {
+    margin-bottom: 20px;
+    background-color: #EDF3FF;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #000;
+    }
+
+    &:hover {
+      background-color: #CFDFFF;
+    }
+
+    &:focus {
+      background-color: #CFDFFF;
+    }
+  }
+
+  &--area {
+    min-height: 200px;
+    resize: none;
+    background-color: #EDF3FF;
+
+    &::-webkit-input-placeholder {
+      color: #000;
+    }
+
+    &:hover {
+      background-color: #CFDFFF;
+    }
+
+    &:focus {
+      background-color: #CFDFFF;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .field {
+
+    &--input {
+      margin-right: 20px;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

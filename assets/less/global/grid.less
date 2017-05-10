@@ -1,0 +1,46 @@
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+.row__half-row {
+  height: 100%;
+}
+
+@media @tablet-widths {
+  .row {
+    height: 100%;
+    flex-flow: column nowrap;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@media @desktop-widths {
+  .row {
+    flex-flow: row nowrap;
+  }
+
+  .rod__half-row {
+    height: 235px;
+  }
+
+  .column {
+    width: 50%;
+  }
+}
+

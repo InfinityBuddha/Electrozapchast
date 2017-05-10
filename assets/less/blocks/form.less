@@ -1,0 +1,39 @@
+.form {
+  margin-top: 25px;
+}
+
+.form__group {
+  margin-bottom: 20px;
+
+  &:nth-child(2) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.catalog__brand .form__group-btn {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form__group-modal {
+  display: flex;
+  flex-flow: column;
+
+}
+
+@media @desktop-widths {
+  .form__group-modal {
+    flex-flow: row;
+  }
+
+  .form__group-btn {
+    flex-flow: row;
+    justify-content: center;
+  }
+}
