@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Электрозапчасть - ремонт и продажа электроинструмента</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=RU&scroll=false" type="text/javascript"></script>
   </head>
@@ -31,6 +32,25 @@
       </div>
     </header>
     <main>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
       <article class="promo">
         <div class="promo__text-group">
           <h1 class="promo__title">Электроинструмент</h1>
@@ -193,5 +213,20 @@
     </footer>
     <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: '.swiper-pagination',
+
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+      })
+    </script>
   </body>
 </html>

@@ -34,26 +34,39 @@ get_header('v2'); ?>
 <noscript><div><img src="https://mc.yandex.ru/watch/42859074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
     <main>
-      <article class="promo">
-        <div class="carousel__slide">
-          <div class="promo__text-group">
-            <h1 class="promo__title">Электроинструмент</h1>
-            <h3 class="promo__subtitle">Ремонт и продажа</h3>
-            <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+      <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="promo__text-group">
+                  <h1 class="promo__title">Бензопила SD-MASTER 4518</h1>
+                  <h3 class="promo__subtitle">5 900 р.</h3>
+                  <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--2">
+                <div class="promo__text-group">
+                  <h1 class="promo__title">Мотоблок бензиновый ХОПЕР 900MQ</h1>
+                  <h3 class="promo__subtitle">25 500 р.</h3>
+                  <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide--3">
+                <div class="promo__text-group">
+                  <h1 class="promo__title">Бензотриммер SD-MASTER GBC-043</h1>
+                  <h3 class="promo__subtitle">4 800 р.</h3>
+                  <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+                </div>
+              </div>
           </div>
-        </div>
-        <div class="carousel__slide">
-          <div class="promo__text-group">
-            <h1 class="promo__title">Makita</h1>
-            <h3 class="promo__subtitle">Региональное представительство в Калуге</h3>
-            <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
-          </div>
-        </div>
-        <ul class="carousel__nav">
-          <li class="carousel__nav-item"></li>
-          <li class="carousel__nav-item"></li>
-        </ul>
-      </article>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
       <section class="services">
         <div class="services__container">
           <h2 class="section-title" id="services">Наши услуги</h2>
@@ -202,7 +215,7 @@ get_header('v2'); ?>
                     </td>
                   </tr>
                 </table>
-                <a class="btn btn__contacts" id="btn-contacts" href="#">Напишите нам</a>
+                <a class="btn btn__contacts" id="btn-contacts" href="#">Обратная связь</a>
               </div>
             </div>
             <div class="column">
@@ -212,5 +225,4 @@ get_header('v2'); ?>
         </div>
       </section>
     </main>
-
 <?php get_footer(); ?>
