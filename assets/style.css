@@ -497,7 +497,7 @@ template {
 }
 @media (min-width: 1150px) {
   .section-title {
-    font-size: 45px;
+    font-size: 39px;
   }
 }
 /* BLOCKS */
@@ -916,6 +916,7 @@ template {
 .services__link {
   text-decoration: none;
   height: 100%;
+  color: #fff;
 }
 .field {
   width: 100%;
