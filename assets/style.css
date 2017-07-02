@@ -491,7 +491,7 @@ template {
 }
 .section-title {
   font-family: 'PT Sans Caption', 'Helvetica', sans-serif;
-  font-size: 36px;
+  font-size: 27px;
   font-weight: bold;
   text-align: center;
 }
@@ -1032,6 +1032,8 @@ template {
 }
 .card__spacer {
   margin-bottom: 20px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
 }
 .card__title {
   font-family: 'PT Sans Caption', 'Helvetica', sans-serif;
@@ -1288,6 +1290,9 @@ template {
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
 }
+.catalog__row--text {
+  margin-bottom: 85px;
+}
 .catalog__brand {
   position: relative;
   display: -ms-flexbox;
@@ -1329,6 +1334,9 @@ template {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     margin-bottom: 20px;
+  }
+  .catalog__row--text {
+    margin-bottom: 85px;
   }
   .catalog__brand a {
     font-size: 14px;
