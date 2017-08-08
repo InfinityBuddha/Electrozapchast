@@ -804,22 +804,38 @@ template {
 .swiper-container {
   width: 100%;
   height: 500px;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 .swiper-slide {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
   background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: 80%;
-  background-image: url('img/gasoline-4518.jpg');
+  background-size: 550px;
+  background-position: 80% 34%;
+  background-image: url('img/redverg-rd-ss95.jpg');
 }
 .swiper-slide--2 {
-  background-position: 80%;
-  background-size: 500px;
-  background-image: url('img/hoper-900mq.jpg');
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  background-position: 82% 19%;
+  background-size: 340px;
+  background-image: url('img/redverg-id500s.jpg');
 }
 .swiper-slide--3 {
-  background-position: 80%;
-  background-size: 400px;
-  background-image: url('img/gbc-043.jpg');
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  background-position: 80% 20%;
+  background-size: 300px;
+  background-image: url('img/redverg-rd-gb226.jpeg');
 }
 .promo__text-group {
   position: absolute;
