@@ -1,83 +1,112 @@
-.promo {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 515px;
-  text-transform: uppercase;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  overflow: hidden;
-}
-
 .swiper-container {
   width: 100%;
-  height: 500px;
+  height: 300px;
   user-select: text;
 }
-.swiper-slide {
-  user-select: text;
-  background-repeat: no-repeat;
-  background-size: 550px;
-  background-position: 80% 34%;
-  background-image: url('img/redverg-rd-ss95.jpg');
-}
-.swiper-slide--2 {
-  user-select: text;
-  background-position: 82% 19%;
-  background-size: 340px;
-  background-image: url('img/redverg-id500s.jpg');
-}
-.swiper-slide--3 {
-  user-select: text;
-  background-position: 80% 20%;
-  background-size: 300px;
-  background-image: url('img/redverg-rd-gb226.jpeg');
-}
+
 .promo__text-group {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 3;
-  width: 75%;
+  text-align: left;
+  width: 100%;
+  text-align: center;
 }
 
 .promo__title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 240px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: @fontfamily-ptsans;
   font-size: @fontsize-big;
-  line-height: @lineheight-h3;
-  letter-spacing: 0.1em;
+  font-weight: normal;
 }
 
 .promo__subtitle {
+  display: none;
   margin-top: 0;
   font-weight: normal;
-  font-size: @fontsize-big;
-  line-height: @lineheight-h3;
+  font-size: @fontsize-h3;
   color: @color-grey;
 }
 
-//@media @tablet-widths {
-//  .promo {
-//    min-height: 745px;
-//  }
-//
-//  .promo__title {
-//    font-size: @fontsize-h3;
-//  }
-//  .promo__subtitle {
-//    font-size: @fontsize-big;
-//  }
-//}
-//
-//@media @desktop-widths {
-//
-//  .promo {
-//    min-height: 845px;
-//  }
-//
-//}
+.swiper-slide {
+  user-select: text;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 49% 47%;
+  background-image: url('img/redverg-rd-ss95.jpg');
+}
+
+.swiper-slide--2 {
+  background-position: 72% 57%;
+  background-size: 175px;
+  background-image: url('img/redverg-id500s.jpg');
+}
+
+.swiper-slide--3 {
+  user-select: text;
+  background-position: 70% 49%;
+  background-size: 135px;
+  background-image: url('img/redverg-rd-gb226.jpeg');
+}
+
+@media @tablet-widths {
+
+  .swiper-container {
+    height: 450px;
+  }
+
+  .promo__text-group {
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    width: 80%;
+  }
+
+  .promo__title {
+    padding-left: 0;
+    margin-bottom: 60px;
+    font-size: @fontsize-h3;
+  }
+
+  .promo__subtitle {
+    display: block;
+    font-size: @fontsize-h3;
+  }
+
+  .swiper-slide {
+    background-size: 450px;
+    background-position: 49% 47%;
+  }
+
+  .swiper-slide--2 {
+    background-position: 82% 19%;
+    background-size: 340px;
+  }
+
+  .swiper-slide--3 {
+    background-position: 80% 20%;
+    background-size: 300px;
+  }
+}
+
+@media @desktop-widths {
+
+
+  .swiper-slide {
+    background-size: 550px;
+    background-position: 80% 47%;
+  }
+
+  .swiper-slide--2 {
+    background-position: 82% 19%;
+    background-size: 340px;
+  }
+
+  .swiper-slide--3 {
+    background-position: 80% 20%;
+    background-size: 300px;
+  }
+}

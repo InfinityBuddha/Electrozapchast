@@ -10,6 +10,8 @@ function init(){
     });
 
     myMap.behaviors.disable('scrollZoom'); //Turn off scroll by wheel
+    myMap.behaviors.disable('multiTouch');
+    myMap.behaviors.disable('drag');
 
     myPlacemark = new ymaps.Placemark([54.5983, 36.2569], {
         hintContent: 'Электрозапчасть', balloonContent: 'Сервис-центр ООО "Электрозапчасть"'

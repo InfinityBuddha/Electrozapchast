@@ -9,13 +9,41 @@
     <?php wp_head(); ?>
 	  <link rel="stylesheet" href="css/swiper.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=RU&scroll=false" type="text/javascript"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter42859074 = new Ya.Metrika({
+                        id:42859074,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/42859074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container">
         <div class="logo">
           <a class="logo__link" href="<?php echo home_url(); ?>"><span>Электро</span>запчасть</a>
-          <div class="logo__phone-number">8 (4842) 700-633</div>
         </div>
         <nav class="main-nav">
           <?php
@@ -41,5 +69,9 @@
           </ul>
         !-->
         </nav>
+        <div class="logo__phone-numbers">
+          <div class="logo__phone-number">8 (4842) 700-633</div>
+          <div class="logo__phone-number">8 (4842) 400-250</div>
+        </div>
       </div>
     </header>

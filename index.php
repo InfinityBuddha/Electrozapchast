@@ -4,35 +4,6 @@
 */
 
 get_header('v2'); ?>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter42859074 = new Ya.Metrika({
-                    id:42859074,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/42859074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
     <main>
       <div class="swiper-container">
           <!-- Additional required wrapper -->
@@ -40,23 +11,23 @@ get_header('v2'); ?>
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="promo__text-group">
-                  <h1 class="promo__title">Бензопила SD-MASTER 4518</h1>
-                  <h3 class="promo__subtitle">5 900 р.</h3>
-                  <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+                  <h1 class="promo__title">Сабельная пила RedVerg RD-SS95</h1>
+                  <h3 class="promo__subtitle">3 100 р.</h3>
+                  <button href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</button>
                 </div>
               </div>
               <div class="swiper-slide swiper-slide--2">
                 <div class="promo__text-group">
-                  <h1 class="promo__title">Мотоблок бензиновый ХОПЕР 900MQ</h1>
-                  <h3 class="promo__subtitle">25 500 р.</h3>
-                  <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+                  <h1 class="promo__title">Дрель RedVerg Basic ID500S ударная</h1>
+                  <h3 class="promo__subtitle">1 850р.</h3>
+                  <button href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</button>
                 </div>
               </div>
               <div class="swiper-slide swiper-slide--3">
                 <div class="promo__text-group">
-                  <h1 class="promo__title">Бензотриммер SD-MASTER GBC-043</h1>
+                  <h1 class="promo__title">Бензиновый триммер Redverg RD-GB226</h1>
                   <h3 class="promo__subtitle">4 800 р.</h3>
-                  <a href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</a>
+                  <button href="#" class="btn btn__promo" id="btn-promo">Связаться с нами</button>
                 </div>
               </div>
           </div>
@@ -72,15 +43,8 @@ get_header('v2'); ?>
           <h2 class="section-title" id="services">Наши услуги</h2>
           <div class="row">
             <div class="column">
-              <?php
-                // Get the ID of a given category
-                $category_id = get_cat_ID('Ремонт бензоинструмента');
-
-                // Get the URL of this category
-                $category_link = get_category_link( $category_id );
-              ?>
-              <a class="services__link" href="<?php echo esc_url( $category_link ); ?>">
-                <div class="card card__spacer">
+              <div class="card card__spacer">
+                <a class="services__link" href="http://prof-zapchast.ru/remont-benzoinstrumenta/">
                   <h3 class="card__title">Ремонт</h3>
                   <p class="card__subtitle">Бензоинструмент</p>
                   <svg xmlns="http://www.w3.org/2000/svg" class="card__repair-icon" width="26" height="26" viewBox="0 0 26 26"><g fill="none"><g fill="#FFF"><path d="M5.7 24.5L17.5 12.6C19 12.9 20.6 12.7 22.1 11.9 24.1 10.7 25.3 8.5 25.2 6.2 25.2 6 25 5.9 24.8 6L21.5 7.9 18.9 6.4 18.9 3.3 22.2 1.4C22.4 1.3 22.4 1 22.2 0.9 20.3-0.2 17.8-0.4 15.7 0.9 13.3 2.3 12.2 5.2 12.8 7.8L1 19.7C-0.3 21-0.3 23.1 1 24.5 2.3 25.8 4.4 25.8 5.7 24.5L5.7 24.5Z"/></g></g></svg>
@@ -98,17 +62,10 @@ get_header('v2'); ?>
                           </g>
                       </g>
                   </svg>
-                </div>
-              </a>
-              <?php
-                // Get the ID of a given category
-                $category_id = get_cat_ID('Ремонт бензоинструмента');
-
-                // Get the URL of this category
-                $category_link = get_category_link( $category_id );
-              ?>
-              <a class="services__link" href="<?php echo esc_url( $category_link ); ?>">
-                <div class="card card__spacer">
+                </a>
+              </div>
+              <div class="card card__spacer">
+                <a class="services__link" href="http://prof-zapchast.ru/remont-electroinstrumenta/">
                   <h3 class="card__title">Ремонт</h3>
                   <p class="card__subtitle">Электроинструмент</p>
                   <svg xmlns="http://www.w3.org/2000/svg" class="card__repair-icon" width="26" height="26" viewBox="0 0 26 26"><g fill="none"><g fill="#FFF"><path d="M5.7 24.5L17.5 12.6C19 12.9 20.6 12.7 22.1 11.9 24.1 10.7 25.3 8.5 25.2 6.2 25.2 6 25 5.9 24.8 6L21.5 7.9 18.9 6.4 18.9 3.3 22.2 1.4C22.4 1.3 22.4 1 22.2 0.9 20.3-0.2 17.8-0.4 15.7 0.9 13.3 2.3 12.2 5.2 12.8 7.8L1 19.7C-0.3 21-0.3 23.1 1 24.5 2.3 25.8 4.4 25.8 5.7 24.5L5.7 24.5Z"/></g></g></svg>
@@ -129,13 +86,13 @@ get_header('v2'); ?>
                         </g>
                     </g>
                   </svg>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
             <div class="column">
-              <div class="card card__spacer card__tools">
+              <div class="card card__spacer card--hide-subtitle">
                 <h3 class="card__title">Продажа инструмента</h3>
-                <div class="card__subtitle">Десятки производителей</div>
+                <p class="card__subtitle">Десятки производителей</p>
               <?php
                 // Get the ID of a given category
                 $category_id = get_cat_ID('Продажа инструмента');
@@ -147,6 +104,13 @@ get_header('v2'); ?>
                 Выбрать бренд</a>
 <svg class="card__sell-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><title>  Shape</title><desc>  Created with Sketch.</desc><g fill="none"><g fill="#FFF"><path d="M9.2 0C8.2 0 7.5 0.8 7.5 1.7 7.5 2 7.6 2.4 7.8 2.6L6 6.5 0.8 6.5C0.4 6.5 0 6.9 0 7.3L0 11.8C0 12.2 0.4 12.6 0.8 12.6L1.3 12.6 3.4 24C3.4 24.4 3.8 24.7 4.2 24.7L20.8 24.7C21.2 24.7 21.6 24.4 21.6 24L23.7 12.6 24.2 12.6C24.6 12.6 25 12.2 25 11.8L25 7.3C25 6.9 24.6 6.5 24.2 6.5L19 6.5 17.2 2.6C17.4 2.4 17.5 2 17.5 1.7 17.5 0.8 16.8 0 15.8 0 14.9 0 14.2 0.8 14.2 1.7 14.2 2.6 14.8 3.3 15.7 3.4L17.1 6.5 7.9 6.5 9.3 3.4C10.2 3.3 10.8 2.6 10.8 1.7 10.8 0.8 10.1 0 9.2 0L9.2 0ZM1.7 8.1L23.3 8.1 23.3 11 1.7 11 1.7 8.1ZM3 12.6L22 12.6 20.1 23 4.9 23 3 12.6ZM4.2 15.7C4.2 16.1 4.6 16.6 5 16.6L7.8 16.6C8.2 16.6 8.6 16.2 8.6 15.7 8.6 15.3 8.2 14.9 7.8 14.9L5 14.9C4.5 14.9 4.2 15.3 4.2 15.7L4.2 15.7ZM10.3 15.7C10.3 16.1 10.7 16.6 11.1 16.6L13.9 16.6C14.3 16.6 14.7 16.2 14.7 15.7 14.7 15.3 14.3 14.9 13.9 14.9L11.1 14.9C10.6 14.9 10.3 15.3 10.3 15.7L10.3 15.7ZM16.4 15.7C16.4 16.1 16.8 16.6 17.2 16.6L20 16.6C20.4 16.6 20.8 16.2 20.8 15.7 20.8 15.3 20.4 14.9 20 14.9L17.2 14.9C16.7 14.9 16.4 15.3 16.4 15.7L16.4 15.7ZM6.7 19.7C6.7 20.1 7.1 20.5 7.5 20.5L10.3 20.5C10.7 20.5 11.1 20.1 11.1 19.7 11.1 19.2 10.7 18.8 10.3 18.8L7.5 18.8C7 18.8 6.7 19.3 6.7 19.7L6.7 19.7ZM13.9 19.7C13.9 20.1 14.3 20.5 14.7 20.5L17.5 20.5C17.9 20.5 18.3 20.1 18.3 19.7 18.3 19.2 17.9 18.8 17.5 18.8L14.7 18.8C14.2 18.8 13.9 19.3 13.9 19.7L13.9 19.7Z"/></g></g></svg>
 
+              </div>
+              <div class="card card__spacer card--new">
+                <a class="services__link" href="http://prof-zapchast.ru/redverg/">
+                  <h3 class="card__title">Новинка!</h3>
+                  <p class="card__subtitle">RedVerg - высокое качество по разумной цене.</p>
+                  <svg class="card__sell-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><title>  Shape</title><desc>  Created with Sketch.</desc><g fill="none"><g fill="#FFF"><path d="M9.2 0C8.2 0 7.5 0.8 7.5 1.7 7.5 2 7.6 2.4 7.8 2.6L6 6.5 0.8 6.5C0.4 6.5 0 6.9 0 7.3L0 11.8C0 12.2 0.4 12.6 0.8 12.6L1.3 12.6 3.4 24C3.4 24.4 3.8 24.7 4.2 24.7L20.8 24.7C21.2 24.7 21.6 24.4 21.6 24L23.7 12.6 24.2 12.6C24.6 12.6 25 12.2 25 11.8L25 7.3C25 6.9 24.6 6.5 24.2 6.5L19 6.5 17.2 2.6C17.4 2.4 17.5 2 17.5 1.7 17.5 0.8 16.8 0 15.8 0 14.9 0 14.2 0.8 14.2 1.7 14.2 2.6 14.8 3.3 15.7 3.4L17.1 6.5 7.9 6.5 9.3 3.4C10.2 3.3 10.8 2.6 10.8 1.7 10.8 0.8 10.1 0 9.2 0L9.2 0ZM1.7 8.1L23.3 8.1 23.3 11 1.7 11 1.7 8.1ZM3 12.6L22 12.6 20.1 23 4.9 23 3 12.6ZM4.2 15.7C4.2 16.1 4.6 16.6 5 16.6L7.8 16.6C8.2 16.6 8.6 16.2 8.6 15.7 8.6 15.3 8.2 14.9 7.8 14.9L5 14.9C4.5 14.9 4.2 15.3 4.2 15.7L4.2 15.7ZM10.3 15.7C10.3 16.1 10.7 16.6 11.1 16.6L13.9 16.6C14.3 16.6 14.7 16.2 14.7 15.7 14.7 15.3 14.3 14.9 13.9 14.9L11.1 14.9C10.6 14.9 10.3 15.3 10.3 15.7L10.3 15.7ZM16.4 15.7C16.4 16.1 16.8 16.6 17.2 16.6L20 16.6C20.4 16.6 20.8 16.2 20.8 15.7 20.8 15.3 20.4 14.9 20 14.9L17.2 14.9C16.7 14.9 16.4 15.3 16.4 15.7L16.4 15.7ZM6.7 19.7C6.7 20.1 7.1 20.5 7.5 20.5L10.3 20.5C10.7 20.5 11.1 20.1 11.1 19.7 11.1 19.2 10.7 18.8 10.3 18.8L7.5 18.8C7 18.8 6.7 19.3 6.7 19.7L6.7 19.7ZM13.9 19.7C13.9 20.1 14.3 20.5 14.7 20.5L17.5 20.5C17.9 20.5 18.3 20.1 18.3 19.7 18.3 19.2 17.9 18.8 17.5 18.8L14.7 18.8C14.2 18.8 13.9 19.3 13.9 19.7L13.9 19.7Z"/></g></g></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -193,7 +157,7 @@ get_header('v2'); ?>
           </svg>
           <h2 class="modal__title">Отвечаем на ваши вопросы</h2>
           <?php echo do_shortcode( '[ninja_form id=1]' ); ?>
-          <!--<form class="form">
+          <form class="form">
             <div class="form__group form__group-modal">
               <input class="field field--input" type="text" placeholder="Имя">
               <input class="field field--input" type="email" placeholder="Email">
@@ -204,7 +168,7 @@ get_header('v2'); ?>
             <div class="form__group form__group-btn">
               <button class="btn btn--secondary">Спросить</button>
             </div>
-          </form>-->
+          </form>
         </article>
       </div>
       <section class="contacts">
@@ -229,7 +193,8 @@ get_header('v2'); ?>
                       д. 3.
                       </p>
                       <p class="contacts__item-value-text">8 (4842) 700-633</p>
-                      <p class="contacts__item-value-text">9:00 до 18:00</p>
+                      <p class="contacts__item-value-text">8 (4842) 400-250</p>
+                      <p class="contacts__item-value-text">9:00 до 18:00 по будням</p>
                     </td>
                   </tr>
                 </table>

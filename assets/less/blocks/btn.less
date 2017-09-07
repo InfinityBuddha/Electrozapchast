@@ -14,54 +14,78 @@
   cursor: pointer;
   transition: all 0.1s ease-out 0.1s;
 }
+
 .btn--secondary {
   background-color: #59C9D5;
 }
+
 .btn--secondary:hover {
   background-color: #45c2d0;
 }
+
 .btn--secondary:active {
   background-color: #33bac8;
 }
+
 .btn--small {
   font-size: 12px;
 }
+
 .btn__contacts {
   width: 250px;
   font-size: 16px;
 }
+
 .btn__contacts:hover {
   background-color: #e8483e;
 }
+
 .btn__contacts:active {
   background-color: #e63327;
 }
+
 .btn__tools {
-  margin: 0 auto;
   padding: 0.7em 2em;
-  width: 250px;
+  width: 100%;
   background-color: transparent;
   border: 3px solid #fff;
-  font-size: 18px;
+  font-size: @fontsize-small;
   color: #fff;
 }
+
 .btn__tools:hover {
   color: #000;
   background-color: #fff;
 }
+
 .btn__tools:active {
   opacity: 0.9;
 }
+
 .btn__promo {
+  display: none;
   font-size: 14px;
   width: 250px;
 }
+
 .btn__promo:hover {
   background-color: #e8483e;
 }
+
 .btn__promo:active {
   background-color: #e63327;
 }
+
+@media @tablet-widths {
+  .btn__promo {
+    display: block;
+  }
+
+  .btn__tools {
+    font-size: @fontsize-base;
+  }
+}
+
 @media (min-width: 1150px) {
   .btn__form {
     margin-bottom: 0;

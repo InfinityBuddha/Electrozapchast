@@ -5,6 +5,18 @@
 .catalog__brand-name {
   font-family: @fontfamily-ptsans;
   font-weight: normal;
+
+  &--card {
+    margin: 0;
+    text-transform: none;
+    font-size: 15px;
+    height: 35px;
+  }
+}
+
+.catalog__brand-price {
+  font-size: @fontsize-big * 0.85;
+  color: @color-brand-card-price;
 }
 
 .catalog__row {
@@ -30,6 +42,7 @@
   color: #fff;
   text-align: center;
   background-color: @color-services-blue;
+  cursor: pointer;
 
   &:hover {
     position: relative;
@@ -38,7 +51,32 @@
                 0 5px 5px 0 rgba(0,0,0,.24);
     background-color: darken(@color-services-blue, 5%);
   }
+
+  &--card {
+    padding: 0 15px;
+    min-height: 380px;
+    border: 1px solid @color-brand-card-border;
+    text-align: left;
+    color: #000;
+    background-color: white;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    img {
+      padding: 20px;
+    }
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
+
+
 
 .catalog__brand a {
   text-decoration: none;
@@ -50,8 +88,9 @@
   }
 }
 
-.catalog__brand:hover .catalog__brand-name {
-  opacity: 0.5;
+.catalog__brand-image {
+  width: 150px;
+  align-self: center;
 }
 
 @media @tablet-widths {
@@ -75,6 +114,10 @@
     font-size: @fontsize-base;
     margin-right: 20px;
 
+    &--card {
+      flex-grow: 0;
+      flex-basis: 247px;
+    }
   }
 
 }
@@ -82,6 +125,10 @@
 @media @desktop-widths {
   .catalog__brand {
     font-size: @fontsize-big;
+
+    &--card {
+      font-size: @fontsize-base;
+    }
   }
 
   .catalog__brand a {
