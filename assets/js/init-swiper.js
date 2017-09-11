@@ -8,5 +8,6 @@ var mySwiper = new Swiper ('.swiper-container', {
 
   autoplay: 7000,
   onlyExternal: true,
-  autoplayDisableOnInteraction: false
+  autoplayDisableOnInteraction: false,
+  paginationClickable: true
 });

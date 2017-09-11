@@ -1,0 +1,128 @@
+.related.products,
+.woocommerce-tabs.wc-tabs-wrapper,
+.woocommerce-Reviews,
+#sidebar,
+.cart,
+.product_meta,
+.add_to_cart_button {
+  display: none;
+}
+
+// Woocommerce input
+
+.aws-container {
+  flex-grow: 1;
+  margin-right: 40px;
+}
+
+.aws-container .aws-search-field {
+  border: none;
+}
+
+#content {
+  .container();
+}
+
+
+// Woocommerce products catalog
+.products {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+
+  &--text {
+    margin-bottom: 85px;
+  }
+}
+
+.product {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 15px;
+  min-height: 340px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: @fontsize-big;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  background-color: white;
+  border: 1px solid @color-brand-card-border;
+  cursor: pointer;
+
+  img {
+    padding: 25px;
+  }
+}
+
+.woocommerce-loop-product__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.woocommerce-loop-product__title {
+  margin: 0;
+  font-size: 15px;
+  font-family: @fontfamily-ptsans;
+  font-weight: normal;
+  text-transform: none;
+  position: absolute;
+  line-height: 1.2;
+  top: 15px;
+  left: 15px;
+}
+
+.price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: @fontsize-big * 0.85;
+  color: @color-brand-card-price;
+}
+
+// Inside product card
+
+.single-product  {
+  .product {
+    flex-flow: row;
+    margin-top: 25px;
+    justify-content: flex-start;
+  }
+
+  .price {
+    position: absolute;
+    left: 45px;
+  }
+
+  .product_title.entry-title {
+    font-size: @fontsize-big;
+    text-transform: none;
+    position: absolute;
+    top: 60px;
+    right: 114px;
+  }
+
+  .attachment-shop_single {
+    max-width: 350px;
+  }
+}
+
+@media @tablet-widths {
+  .products {
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    &--text {
+      margin-bottom: 85px;
+    }
+  }
+
+  .product {
+    flex: 1 21%;
+    margin-bottom: 0;
+  }
+}
