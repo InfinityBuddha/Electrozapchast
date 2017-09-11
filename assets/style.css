@@ -510,12 +510,14 @@ template {
   display: none;
 }
 .aws-container {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  margin-right: 40px;
+  width: 75%;
+  margin-top: 30px;
+  -ms-flex-order: 4;
+      order: 4;
 }
 .aws-container .aws-search-field {
   border: none;
+  padding-left: 10px;
 }
 #content {
   margin: 0 auto;
@@ -532,6 +534,38 @@ template {
   #content {
     max-width: 1050px;
   }
+}
+.woocommerce-breadcrumb {
+  margin-top: 35px;
+}
+.woocommerce-pagination ul.page-numbers {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+.woocommerce-pagination li {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.woocommerce-pagination .current {
+  display: block;
+  height: 100%;
+  color: white;
+  background-color: #4886FF;
+  line-height: 33px;
+  border-radius: 5px;
+}
+.woocommerce-pagination a.page-numbers {
+  line-height: 33px;
+  display: block;
+  text-decoration: none;
+  color: #4A4A4A;
+}
+.woocommerce-pagination a.page-numbers:hover {
+  line-height: 30px;
 }
 .products {
   display: -ms-flexbox;
@@ -622,6 +656,15 @@ template {
   .products--text {
     margin-bottom: 85px;
   }
+  .aws-container {
+    width: auto;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    margin: 0;
+    margin-right: 25px;
+    -ms-flex-order: 0;
+        order: 0;
+  }
   .product {
     -ms-flex: 1 21%;
         flex: 1 21%;
@@ -632,7 +675,6 @@ template {
 .page-header {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 70px;
   border-bottom: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px #EEEEEE;
 }
@@ -705,10 +747,10 @@ template {
   background-color: #e63327;
 }
 .btn__tools {
-  padding: 0.7em 2em;
+  padding: 0.5em 2em;
   width: 100%;
   background-color: transparent;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   font-size: 13px;
   color: #fff;
 }
@@ -948,26 +990,26 @@ template {
     margin: 0;
   }
   .main-nav__list {
-    margin-left: 50px;
+    margin-left: 25px;
   }
 }
 .swiper-container {
   width: 100%;
-  height: 300px;
+  height: 450px;
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .promo__text-group {
   position: absolute;
-  text-align: left;
   width: 100%;
   text-align: center;
 }
 .promo__title {
-  margin-top: 0;
-  margin-bottom: 240px;
+  margin-top: 90px;
+  height: 50px;
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'PT Sans Caption', 'Helvetica', sans-serif;
@@ -975,8 +1017,7 @@ template {
   font-weight: normal;
 }
 .promo__subtitle {
-  display: none;
-  margin-top: 0;
+  margin-top: 220px;
   font-weight: normal;
   font-size: 34px;
   color: #4A4A4A;
@@ -992,7 +1033,7 @@ template {
   background-image: url('img/redverg-rd-ss95.jpg');
 }
 .swiper-slide--2 {
-  background-position: 72% 57%;
+  background-position: 50% 57%;
   background-size: 175px;
   background-image: url('img/redverg-id500s.jpg');
 }
@@ -1001,13 +1042,13 @@ template {
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
-  background-position: 70% 49%;
+  background-position: 56% 58%;
   background-size: 135px;
   background-image: url('img/redverg-rd-gb226.jpeg');
 }
 @media (min-width: 768px) {
   .swiper-container {
-    height: 450px;
+    margin-top: 50px;
   }
   .promo__text-group {
     text-align: left;
@@ -1018,6 +1059,7 @@ template {
     width: 80%;
   }
   .promo__title {
+    margin-top: 0;
     padding-left: 0;
     margin-bottom: 60px;
     font-size: 34px;
@@ -1025,23 +1067,27 @@ template {
   .promo__subtitle {
     display: block;
     font-size: 34px;
+    margin-top: 0;
   }
   .swiper-slide {
     background-size: 450px;
-    background-position: 49% 47%;
+    background-position: 89% 47%;
   }
   .swiper-slide--2 {
     background-position: 82% 19%;
-    background-size: 340px;
+    background-size: 300px;
   }
   .swiper-slide--3 {
-    background-position: 80% 20%;
-    background-size: 300px;
+    background-position: 90% 7%;
+    background-size: 260px;
   }
 }
 @media (min-width: 1150px) {
+  .swiper-container {
+    max-width: 1470px;
+  }
   .swiper-slide {
-    background-size: 550px;
+    background-size: 500px;
     background-position: 80% 47%;
   }
   .swiper-slide--2 {
@@ -1049,8 +1095,7 @@ template {
     background-size: 340px;
   }
   .swiper-slide--3 {
-    background-position: 80% 20%;
-    background-size: 300px;
+    background-size: 260px;
   }
 }
 .modal {
@@ -1123,9 +1168,8 @@ template {
   }
 }
 .services__link {
+  margin-top: 20px;
   text-decoration: none;
-  height: 100%;
-  width: 100%;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -1247,6 +1291,9 @@ template {
 .card--green {
   background-color: #81E5C9;
 }
+.card--top-margin {
+  margin-top: 20px;
+}
 .card:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   background-color: #2e75ff;
@@ -1261,7 +1308,6 @@ template {
   background-color: #6ce1c0;
 }
 .card__spacer {
-  margin-bottom: 20px;
   -ms-flex-positive: 1;
       flex-grow: 1;
 }
