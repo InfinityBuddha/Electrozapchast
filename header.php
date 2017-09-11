@@ -39,7 +39,7 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/42859074" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
   </head>
-  <body>
+  <body <?php body_class( 'my-class' ); ?>>
     <header class="page-header">
       <div class="page-header__container">
         <div class="logo">
@@ -69,6 +69,7 @@
           </ul>
         !-->
         </nav>
+        <?php echo do_shortcode( '[aws_search_form]' ); ?>
         <div class="logo__phone-numbers">
           <div class="logo__phone-number">8 (4842) 700-633</div>
           <div class="logo__phone-number">8 (4842) 400-250</div>
