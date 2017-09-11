@@ -43,7 +43,7 @@ function get_the_post_id() {
             </path>
           </svg>
           <h2 class="modal__title">Отвечаем на ваши вопросы</h2>
-          <?php echo do_shortcode( '[ninja_form id=1]' ); ?>
+          <?php echo do_shortcode( '[contact-form-7 id="270" title="Контактная форма 1"]' ); ?>
           <!--<form class="form">
             <div class="form__group form__group-modal">
               <input class="field field--input" type="text" placeholder="Имя">
