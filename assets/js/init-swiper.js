@@ -7,5 +7,7 @@ var mySwiper = new Swiper ('.swiper-container', {
   prevButton: '.swiper-button-prev',
 
   autoplay: 7000,
-  autoplayDisableOnInteraction: false
+  onlyExternal: true,
+  autoplayDisableOnInteraction: false,
+  paginationClickable: true
 });

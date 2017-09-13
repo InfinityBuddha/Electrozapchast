@@ -1,79 +1,115 @@
-.promo {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 515px;
-  text-transform: uppercase;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  overflow: hidden;
-}
-
 .swiper-container {
   width: 100%;
-  height: 500px;
+  height: 450px;
+  user-select: text;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.swiper-slide {
-  background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: 80%;
-  background-image: url('img/gasoline-4518.jpg');
-}
-.swiper-slide--2 {
-  background-position: 80%;
-  background-size: 500px;
-  background-image: url('img/hoper-900mq.jpg');
-}
-.swiper-slide--3 {
-  background-position: 80%;
-  background-size: 400px;
-  background-image: url('img/gbc-043.jpg');
-}
+
 .promo__text-group {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 3;
-  width: 75%;
+  width: 100%;
+  text-align: center;
 }
 
 .promo__title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 90px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: @fontfamily-ptsans;
   font-size: @fontsize-big;
-  line-height: @lineheight-h3;
-  letter-spacing: 0.1em;
+  font-weight: normal;
 }
 
 .promo__subtitle {
-  margin-top: 0;
+  margin-top: 220px;
   font-weight: normal;
-  font-size: @fontsize-big;
-  line-height: @lineheight-h3;
+  font-size: @fontsize-h3;
   color: @color-grey;
 }
 
-//@media @tablet-widths {
-//  .promo {
-//    min-height: 745px;
-//  }
-//
-//  .promo__title {
-//    font-size: @fontsize-h3;
-//  }
-//  .promo__subtitle {
-//    font-size: @fontsize-big;
-//  }
-//}
-//
-//@media @desktop-widths {
-//
-//  .promo {
-//    min-height: 845px;
-//  }
-//
-//}
+.swiper-slide {
+  user-select: text;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 49% 47%;
+  background-image: url('img/redverg-rd-ss95.jpg');
+}
+
+.swiper-slide--2 {
+  background-position: 50% 57%;
+  background-size: 175px;
+  background-image: url('img/redverg-id500s.jpg');
+}
+
+.swiper-slide--3 {
+  user-select: text;
+  background-position: 56% 58%;
+  background-size: 135px;
+  background-image: url('img/redverg-rd-gb226.jpeg');
+}
+
+@media @tablet-widths {
+
+  .swiper-container {
+    margin-top: 50px;
+  }
+
+  .promo__text-group {
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    width: 80%;
+  }
+
+  .promo__title {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 60px;
+    font-size: @fontsize-h3;
+  }
+
+  .promo__subtitle {
+    display: block;
+    font-size: @fontsize-h3;
+    margin-top: 0;
+  }
+
+  .swiper-slide {
+    background-size: 450px;
+    background-position: 89% 47%;
+  }
+
+  .swiper-slide--2 {
+    background-position: 82% 19%;
+    background-size: 300px;
+  }
+
+  .swiper-slide--3 {
+    background-position: 90% 7%;
+    background-size: 260px;
+  }
+}
+
+@media @desktop-widths {
+  .swiper-container {
+    max-width: 1470px;
+  }
+
+
+  .swiper-slide {
+    background-size: 500px;
+    background-position: 80% 47%;
+  }
+
+  .swiper-slide--2 {
+    background-position: 82% 19%;
+    background-size: 340px;
+  }
+
+  .swiper-slide--3 {
+    background-size: 260px;
+  }
+}

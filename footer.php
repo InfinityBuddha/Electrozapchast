@@ -10,8 +10,8 @@
               </path>
             </svg>Ремонт</div>
           <ul class="page-footer__repair-list">
-            <li class="page-footer__item"><a class="page-footer__item-link" href="">Бензоинструмент</a></li>
-            <li class="page-footer__item"><a class="page-footer__item-link" href="">Электроинструмент</a></li>
+            <li class="page-footer__item"><a class="page-footer__item-link" href="http://prof-zapchast.ru/repair-gasoline/">Бензоинструмент</a></li>
+            <li class="page-footer__item"><a class="page-footer__item-link" href="http://prof-zapchast.ru/repair-electro/">Электроинструмент</a></li>
           </ul>
           <div class="page-footer__nav-title">
           <svg class="cart-icon" width="15px" height="14px" viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -20,14 +20,14 @@
           </svg>
           Продажа</div>
           <ul class="page-footer__sale-list">
-            <li class="page-footer__item"><a class="page-footer__item-link" href="">Инструмент</a></li>
-            <li class="page-footer__item"><a class="page-footer__item-link" href="">Оригинальные запчасти</a></li>
-            <li class="page-footer__item"><a class="page-footer__item-link" href="">Китайские запчасти</a></li>
+            <li class="page-footer__item"><a class="page-footer__item-link" href="http://prof-zapchast.ru/category/sell-tools/">Инструмент</a></li>
+            <li class="page-footer__item"><a class="page-footer__item-link" href="http://prof-zapchast.ru/category/original-spare/">Оригинальные запчасти</a></li>
+            <li class="page-footer__item"><a class="page-footer__item-link" href="http://prof-zapchast.ru/category/china-spare/">Китайские запчасти</a></li>
           </ul>
         </nav>
         <div class="page-footer__contacts">
           <p class="page-footer__phone-number">8 (4842) 700-633</p>
-          <p class="page-footer__phone-number">8 (4842) 700-635</p>
+          <p class="page-footer__phone-number">8 (4842) 400-250</p>
           <a class="page-footer__mail" href="mailto:400250@bk.ru">400250@bk.ru</a>
         </div>
         <div class="page-footer__author">

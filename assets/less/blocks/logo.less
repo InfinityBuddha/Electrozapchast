@@ -1,10 +1,3 @@
-.logo {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin-top: 20px;
-}
-
 .logo__link {
   font-size: @fontsize-big;
   line-height: 27px;
@@ -35,12 +28,19 @@
 }
 
 .logo__page-footer {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
+.logo__phone-numbers {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
 .logo__phone-number {
-  margin-top: 10px;
+  flex-grow: 2;
   font-size: @fontsize-base;
-  line-height: @lineheight-base;
+  text-align: right;
+  line-height: 1.4;
 }

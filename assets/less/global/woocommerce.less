@@ -1,0 +1,185 @@
+.related.products,
+.woocommerce-tabs.wc-tabs-wrapper,
+.woocommerce-Reviews,
+#sidebar,
+.cart,
+.product_meta,
+.add_to_cart_button {
+  display: none;
+}
+
+// Woocommerce search-input
+.aws-container {
+  width: 75%;
+  margin-top: 30px;
+  order: 4;
+}
+
+.aws-container .aws-search-field {
+  border: none;
+  padding-left: 10px;
+}
+
+#content {
+  .container();
+}
+
+// Woocommerce breadcrumb
+.woocommerce-breadcrumb {
+  font-size: @fontsize-base;
+  margin-top: 35px;
+
+  a {
+    text-decoration: none;
+    color: @color-services-blue;
+
+    &:hover {
+      color: lighten(@color-services-blue, 15%);
+    }
+  }
+}
+// Woocommerce pagination
+.woocommerce-pagination {
+  ul.page-numbers {
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .current {
+    display: block;
+    height: 100%;
+    color: white;
+    background-color: @color-services-blue;
+    line-height: 33px;
+    border-radius: 5px;
+  }
+
+  a.page-numbers {
+    line-height: 33px;
+    display: block;
+    text-decoration: none;
+    color: @color-grey;
+
+    &:hover {
+      line-height: 30px;
+    }
+  }
+}
+
+// Woocommerce products catalog
+.products {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+
+  &--text {
+    margin-bottom: 85px;
+  }
+}
+
+.product {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 15px;
+  min-height: 340px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: @fontsize-big;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  background-color: white;
+  border: 1px solid @color-brand-card-border;
+  cursor: pointer;
+
+  img {
+    padding: 25px;
+  }
+}
+
+.woocommerce-loop-product__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.woocommerce-loop-product__title {
+  margin: 0;
+  font-size: 15px;
+  font-family: @fontfamily-ptsans;
+  font-weight: normal;
+  text-transform: none;
+  position: absolute;
+  line-height: 1.2;
+  top: 15px;
+  left: 15px;
+}
+
+.price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: @fontsize-big * 0.85;
+  color: @color-brand-card-price;
+}
+
+// Inside product card
+.single-product  {
+  .product {
+    flex-flow: row;
+    margin-top: 25px;
+    justify-content: flex-start;
+  }
+
+  .price {
+    position: absolute;
+    left: 45px;
+  }
+
+  .product_title.entry-title {
+    font-size: @fontsize-big;
+    text-transform: none;
+    position: absolute;
+    top: 60px;
+    right: 114px;
+  }
+
+  .attachment-shop_single {
+    max-width: 350px;
+  }
+}
+
+@media @tablet-widths {
+  .products {
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    &--text {
+      margin-bottom: 85px;
+    }
+  }
+
+  .aws-container {
+    width: auto;
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 25px;
+    order: 0;
+  }
+
+  .product {
+    flex: 1 21%;
+    margin-bottom: 0;
+  }
+}
