@@ -26,7 +26,17 @@
 
 // Woocommerce breadcrumb
 .woocommerce-breadcrumb {
+  font-size: @fontsize-base;
   margin-top: 35px;
+
+  a {
+    text-decoration: none;
+    color: @color-services-blue;
+
+    &:hover {
+      color: lighten(@color-services-blue, 15%);
+    }
+  }
 }
 // Woocommerce pagination
 .woocommerce-pagination {
@@ -63,6 +73,7 @@
     }
   }
 }
+
 // Woocommerce products catalog
 .products {
   display: flex;

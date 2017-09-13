@@ -536,7 +536,15 @@ template {
   }
 }
 .woocommerce-breadcrumb {
+  font-size: 17px;
   margin-top: 35px;
+}
+.woocommerce-breadcrumb a {
+  text-decoration: none;
+  color: #4886FF;
+}
+.woocommerce-breadcrumb a:hover {
+  color: #95b9ff;
 }
 .woocommerce-pagination ul.page-numbers {
   padding: 0;
