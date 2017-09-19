@@ -735,6 +735,10 @@ template {
   cursor: pointer;
   transition: all 0.1s ease-out 0.1s;
 }
+.btn--feedback {
+  padding: 0.85em 2em;
+  width: 100%;
+}
 .btn--secondary {
   background-color: #59C9D5;
 }
@@ -784,6 +788,9 @@ template {
   background-color: #e63327;
 }
 @media (min-width: 768px) {
+  .btn--feedback {
+    width: auto;
+  }
   .btn__promo {
     display: block;
   }
@@ -1115,7 +1122,8 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  padding: 30px 50px;
+  padding: 15px 35px;
+  font-size: 17px;
   width: 75%;
   background-color: #fff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -1133,6 +1141,7 @@ template {
 }
 .modal__title {
   font-family: 'PT Sans Caption', 'Helvetica', sans-serif;
+  font-size: 17px;
   text-align: center;
 }
 .modal__icon-close {
@@ -1218,7 +1227,7 @@ template {
   background-color: #CFDFFF;
 }
 .field--area {
-  min-height: 200px;
+  min-height: 150px;
   resize: none;
   background-color: #EDF3FF;
 }

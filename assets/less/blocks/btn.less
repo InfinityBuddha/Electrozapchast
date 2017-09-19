@@ -13,6 +13,11 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-out 0.1s;
+
+  &--feedback {
+    padding: 0.85em 2em;
+    width: 100%;
+  }
 }
 
 .btn--secondary {
@@ -77,6 +82,10 @@
 }
 
 @media @tablet-widths {
+  .btn--feedback {
+    width: auto;
+  }
+
   .btn__promo {
     display: block;
   }
