@@ -519,6 +519,9 @@ template {
   border: none;
   padding-left: 10px;
 }
+.aws-container .aws-search-field:focus {
+  background-color: #ebf2ff;
+}
 #content {
   margin: 0 auto;
   padding-left: 30px;
