@@ -649,9 +649,10 @@ template {
 .single-product .product_title.entry-title {
   font-size: 22px;
   text-transform: none;
-  position: absolute;
-  top: 60px;
-  right: 114px;
+}
+.single-product .entry-summary {
+  margin-left: 52px;
+  text-transform: none;
 }
 .single-product .attachment-shop_single {
   max-width: 350px;

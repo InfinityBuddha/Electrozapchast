@@ -7,10 +7,9 @@
     <title>Электрозапчасть - ремонт и продажа электроинструмента</title>
 
     <?php wp_head(); ?>
-	  <link rel="stylesheet" href="css/swiper.min.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=RU&scroll=false" type="text/javascript"></script>
+	  <script async src="https://api-maps.yandex.ru/2.1/?lang=RU&scroll=false" type="text/javascript"></script>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+    <script type="text/javascript" >
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {

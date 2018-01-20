@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var run = require("run-sequence");
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -39,3 +40,8 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
+
+gulp.task("build", function(fn) {
+  run("scripts", "style", fn);
+});
+
